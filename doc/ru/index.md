@@ -135,7 +135,7 @@ Windows 8 Контакты являются readonly. Через контакт�
     options.multiple = true;
     options.desiredFields = [navigator.contacts.fieldType.id];
     var fields       = [navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.name];
-    navigator.contacts.find(onSuccess, onError, fields, options);
+    navigator.contacts.find(fields, onSuccess, onError, options);
     
 
 ## navigator.contacts.pickContact
